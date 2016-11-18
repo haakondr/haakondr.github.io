@@ -20,13 +20,13 @@
             <p>Utvikler og arkitekt som liker enkle løsninger på vanskelige problemer. Generalist med fokus på et bredt
                 spekter av teknologier, alt fra database til brukeropplevelse.
                 Brenner for gode grensesnitt, både for bruker, API eller design av funksjoner. Gode abstraksjoner er
-                viktig i alle ledd. Kjenn ditt publikum og spist ditt eget API</p>
+                viktig i alle ledd. Kjenn ditt publikum og spis ditt eget API</p>
             <p> Mener at små fokuserte teams jobber bedre enn store. Disiplin og kvalitet er bedre enn kvalitetssikring
                 i mange ledd. Opptatt av utviklingsmetodikk, og jobber iherdig for å oppnå raske, trygge og effektive
-                produksjonssettinger. </p>
+                produksjonssettinger.</p>
             <p>Teamdynamikk og kommunikasjon er viktig, og er stor tilhenger av parprogrammering. Tilbakemelding og code
                 review fungerer best når man deler en problemstilling.</p>
-            <p>Uteksaminert med Master i Informatikk fra NTNU i 2012 med fokus og fordypning i kunstig intelligens og
+            <p>Uteksaminert med Master i Informatikk fra NTNU i 2012 med fokus på kunstig intelligens og
                 naturlig språk prosessering.</p>
         </div>
         <div class="col s12 m12 l5">
@@ -126,51 +126,100 @@
 
 <div class="row">
     <h2>Prosjekter</h2>
-    <h4>Husbanken Startlån Saksbehandling</h4>
-    <p>Mars 2015 - d.d.</p>
-
-    <h4>Husbanken Startlån eSøknad</h4>
-    <p>Jan 2014 - d.d.</p>
-    <p>Rolle: Utvikler (frontend, backend)</p>
-    <p>eSøknad Startlån ble lansert 4. mai 2016. Ved å kunne sende inn søknad elektronisk sparer både søkere og
-        saksbehandlere mye tid. Applikasjonen tar imot ca 1000 innsendte søknader i måneden. Prosjektet vant i 2016 prisen for Årets Digitale Tjeneste [1].</p>
-    <p>Hadde en bred rolle som utvikler som omfattet alt fra frontend og backend utvikling til testautomatisering og
-        konseptutvikling. Deltok også på diverse workshops med fagressurser og interaksjonsdesignere der det
-        var fokus på konsept/flyt/utforming av løsningen.</p>
-    <p>Prosjektet hadde et tydelig fokus på automatiserte ende-til-ende browsertester vha.
-        cucumber/protractor/selenium. Automatiserte tester kombinert med docker gjorde det mulig å kjøre
-        fullstendige ende-til-ende tester lokalt på hver enkelt utviklerpc. Samtidig kjørte de samme testene i
-        continuous integrastion med automatiske releaser til testmiljøet.</p>
-
-    <p>Gjennom hyppige brukertester jobbet teamet iterativt frem til en endelig løsning. Det var derfor viktig å
-        kunne
-        respondere raskt på endringer. Her ble det lagt ned mye arbeid med en komponentbasert arkitektur, med små
-        testbare komponenter i AngularJS som lett kunne flyttes rundt i skjermbildene.</p>
-
-    <p>
-        Hadde ansvar for flere nøkkelfunksjoner, blant annet:
-
-    <ul>
-        <li>Klientsidelogging - Alle JavaScript feil logges med stacktrace samt et utdrag av brukerinteraksjoner som
-            førte til feilen
-        </li>
-        <li>Altinn-integrasjon - henter ut selvangivelsedata og dokumenter basert på innlogget sesjon i Altinn med
-            cross origin requests mot
-            altinn sitt API
-        </li>
-    </ul>
     <div>
-        <div class="chip">AngularJS</div>
-        <div class="chip">MongoDB</div>
-        <div class="chip">Java</div>
-        <div class="chip">Docker</div>
-        <div class="chip">Selenium</div>
-        <div class="chip">NodeJS</div>
-        <div class="chip">HTML5</div>
-        <div class="chip">CSS3</div>
+        <h4>Husbanken Startlån Saksbehandling</h4>
+        <p>Mars 2015 - d.d.</p>
+        <p>Rolle: Teknisk arkitekt, utvikler</p>
+        <p>Startlån saksbehandling tar imot søknader fra eSøknad Startlån. Applikasjonen bistår i saksbehandlingen, og
+            tilbyr funksjonalitet som simulering av fremtidssituasjoner, arkivering, interaksjon med søkere, mm. for
+            kommunale saksbehandlere.</p>
+        <p>Første minimale versjon ble lansert september 2016, med forløpende hyppige endringer.
+            Høy endringshastighet bidro til å få rask tilbakemelding fra brukere, og tydeliggjorde behovet for en
+            strømlinjeformet continuous integration pipeline. Dette innebærer immutabel infrastruktur vha. docker og
+            fullstendig ende-til-ende testdekning av både brukergrensesnitt (selenium) og API-tester. </p>
+        <p>Min rolle gikk primært ut på å skissere opp overordnet arkitektur, fasilitering av API-design,
+            parprogrammering, pull requests osv. Mange prosessmessige grep ble gjort for å kunne levere hyppige
+            endringer på et system som er i bruk.</p>
+        <p>Prosjektet bestod av tolv utviklere, og rundt ti fag/ux/test/devops ressurser. </p>
+        <div>
+            <div class="chip">Angular2</div>
+            <div class="chip">TypeScript</div>
+            <div class="chip">Java</div>
+            <div class="chip">JAX-RS</div>
+            <div class="chip">Sql Server</div>
+            <div class="chip">Docker</div>
+            <div class="chip">nginx</div>
+            <div class="chip">Wiremock</div>
+        </div>
+    </div>
+    <div>
+        <h4>Husbanken Startlån eSøknad</h4>
+        <p>Jan 2014 - d.d.</p>
+        <p>Rolle: Utvikler (frontend, backend)</p>
+        <p>eSøknad Startlån ble lansert 4. mai 2016. Ved å kunne sende inn søknad elektronisk sparer både søkere og
+            saksbehandlere mye tid. Applikasjonen tar imot ca 1000 innsendte søknader i måneden. Prosjektet vant i 2016
+            prisen for Årets Digitale Tjeneste [1].</p>
+        <p>Hadde en bred rolle som utvikler som omfattet alt fra frontend og backend utvikling til testautomatisering og
+            konseptutvikling. Deltok også på diverse workshops med fagressurser og interaksjonsdesignere der det
+            var fokus på konsept/flyt/utforming av løsningen.</p>
+        <p>Prosjektet hadde et tydelig fokus på automatiserte ende-til-ende browsertester vha.
+            cucumber/protractor/selenium. Automatiserte tester kombinert med docker gjorde det mulig å kjøre
+            fullstendige ende-til-ende tester lokalt på hver enkelt utviklerpc. Samtidig kjørte de samme testene i
+            continuous integrastion med automatiske releaser til testmiljøet.</p>
+
+        <p>Gjennom hyppige brukertester jobbet teamet iterativt frem til en endelig løsning. Det var derfor viktig å
+            kunne
+            respondere raskt på endringer. Her ble det lagt ned mye arbeid med en komponentbasert arkitektur, med små
+            testbare komponenter i AngularJS som lett kunne flyttes rundt i skjermbildene.</p>
+
+        <p>
+            Hadde ansvar for flere nøkkelfunksjoner, blant annet:
+
+        <ul>
+            <li>Klientsidelogging - Alle JavaScript feil logges med stacktrace samt et utdrag av brukerinteraksjoner som
+                førte til feilen
+            </li>
+            <li>Altinn-integrasjon - henter ut selvangivelsedata og dokumenter basert på innlogget sesjon i Altinn med
+                cross origin requests mot
+                altinn sitt API
+            </li>
+        </ul>
+        <div>
+            <div class="chip">AngularJS</div>
+            <div class="chip">MongoDB</div>
+            <div class="chip">Java</div>
+            <div class="chip">Docker</div>
+            <div class="chip">Selenium</div>
+            <div class="chip">NodeJS</div>
+            <div class="chip">HTML5</div>
+            <div class="chip">CSS3</div>
+        </div>
     </div>
 
-    <h4>Landbruksdirektoratet</h4>
+    <div>
+        <h4>Myfarm Solutions Sensor Dashboard</h4>
+        <p>Des 2015 - d.d. (fritidsbasert)</p>
+        <p>Rolle: Solo utvikler</p>
+        <p>Myfarm Solutions' produkter baserer seg på å samle inn data for å kunne drive landbruk mer effektivt. Sensor
+            Dashboard løsningen er en prototype som visualiserer sensordata i grafer for brukeren.</p>
+        <p>Sensorene samler inn diverse data (temperatur, fuktighet, vind, solinnstråling, mm).</p>
+        <div>
+            <div class="chip">Angular2</div>
+            <div class="chip">Docker</div>
+            <div class="chip">PostgreSQL</div>
+            <div class="chip">Google Cloud SQL</div>
+            <div class="chip">Oauth2</div>
+            <div class="chip">Java</div>
+            <div class="chip">d3</div>
+            <div class="chip">libelium waspmote sensors</div>
+        </div>
+    </div>
+
+
+    <div>
+        <h4>Landbruksdirektoratet forvaltning</h4>
+    </div>
+
 </div>
 
 <div class="row">
