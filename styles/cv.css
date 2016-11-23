@@ -11,3 +11,14 @@ body {
     -webkit-print-color-adjust: exact;
 }
 
+
+
+.profile-image {
+    width: 15rem;
+    height: 15rem;
+}
+
+.resume-page {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
