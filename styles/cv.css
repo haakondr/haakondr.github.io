@@ -11,6 +11,12 @@ body {
     -webkit-print-color-adjust: exact;
 }
 
+table {
+    font-size: 90%;
+}
+
+.pagebreak { page-break-before: always; }
+
 h2 {
     font-size: 2rem;
 }
@@ -23,7 +29,9 @@ h4 {
     font-size: 1.6rem;
 }
 
-
+p {
+    max-width: 40rem;
+}
 
 .profile-image {
     width: 15rem;
