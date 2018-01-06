@@ -17,8 +17,10 @@ table {
 
 .pagebreak { page-break-before: always; }
 
-.summary {
-  text-align: justify;
+@media print {
+  .cv-element {
+    page-break-inside: avoid;
+  }
 }
 
 h1 {
